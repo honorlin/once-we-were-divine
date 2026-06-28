@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/style.css?v=5" />
 </head>
 <body>
 
@@ -40,19 +40,22 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero__bg" style="background-image:url('assets/img/hero-wide.jpg')"></div>
-  <div class="hero__veil"></div>
+  <div class="hero__aura" aria-hidden="true"></div>
   <div class="hero__inner">
-    <p class="hero__eyebrow">加拿大新唐人出品 ｜ 台灣發行 雄獅影視文化</p>
-    <h1 class="hero__title">再次成為神</h1>
-    <p class="hero__title-en">ONCE WE WERE DIVINE</p>
+    <h1 class="visually-hidden">再次成為神 ONCE WE WERE DIVINE</h1>
+    <figure class="hero__banner">
+      <img src="assets/img/hero-wide.jpg" alt="再次成為神 ONCE WE WERE DIVINE 主視覺海報" />
+    </figure>
     <p class="hero__tag">「為你而來」三部曲 — 壓軸鉅獻</p>
-    <p class="hero__sub">穿越時空、縱橫古今<br/>一場靈魂的覺醒之旅</p>
+    <p class="hero__sub">穿越時空、縱橫古今　一場靈魂的覺醒之旅</p>
     <div class="hero__actions">
       <a href="#trailer" class="btn btn--gold">▶ 觀看預告</a>
       <a href="#screening" class="btn btn--ghost">上映資訊</a>
     </div>
   </div>
+  <div class="hero__rays" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="embers" aria-hidden="true"></div>
   <a href="#synopsis" class="hero__scroll" aria-label="向下捲動">
     <span class="hero__scroll-line"></span>
     <span class="hero__scroll-text">向下探索</span>
@@ -204,6 +207,6 @@
   <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="下一張">›</button>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=4"></script>
 </body>
 </html>

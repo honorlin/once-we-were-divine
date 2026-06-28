@@ -60,6 +60,24 @@
     }
   }
 
+  /* ---- Rising light embers (天國光點) ---- */
+  var emberLayer = document.querySelector(".embers");
+  if (emberLayer && !reduce) {
+    var E_COUNT = 44;
+    for (var j = 0; j < E_COUNT; j++) {
+      var e = document.createElement("span");
+      e.className = "ember";
+      var es = 2 + Math.random() * 5;
+      e.style.width = es + "px";
+      e.style.height = es + "px";
+      e.style.left = Math.random() * 100 + "%";
+      e.style.setProperty("--drift", (Math.random() * 80 - 40) + "px");
+      e.style.animationDuration = 7 + Math.random() * 9 + "s";
+      e.style.animationDelay = -Math.random() * 16 + "s";
+      emberLayer.appendChild(e);
+    }
+  }
+
   /* ---- Lightbox gallery ---- */
   var items = Array.prototype.slice.call(
     document.querySelectorAll(".gallery__item")
