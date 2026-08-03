@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css?v=5" />
+<link rel="stylesheet" href="css/style.css?v=6" />
 </head>
 <body>
 
@@ -31,7 +31,9 @@
     <a href="#gallery">劇照藝術</a>
     <a href="#trailer">預告片</a>
     <a href="#director">導演的話</a>
+    <a href="#testimonialsSection" id="navTestimonials" hidden>觀眾心得</a>
     <a href="#screening" class="nav__cta">上映資訊</a>
+    <a href="https://lion-movies.oen.tw/" class="nav__ticket" target="_blank" rel="noopener noreferrer">立即購票</a>
   </nav>
   <button class="nav__toggle" id="navToggle" aria-label="開啟選單">
     <span></span><span></span><span></span>
@@ -46,11 +48,12 @@
     <figure class="hero__banner">
       <img src="assets/img/hero-wide.jpg" alt="再次成為神 ONCE WE WERE DIVINE 主視覺海報" />
     </figure>
-    <p class="hero__tag">「為你而來」三部曲 — 壓軸鉅獻</p>
-    <p class="hero__sub">穿越時空、縱橫古今　一場靈魂的覺醒之旅</p>
+    <p class="hero__tag" id="heroTag">「為你而來」三部曲 — 壓軸鉅獻</p>
+    <p class="hero__sub" id="heroSub">穿越時空、縱橫古今　一場靈魂的覺醒之旅</p>
     <div class="hero__actions">
       <a href="#trailer" class="btn btn--gold">▶ 觀看預告</a>
       <a href="#screening" class="btn btn--ghost">上映資訊</a>
+      <a href="https://lion-movies.oen.tw/" class="btn btn--ticket" target="_blank" rel="noopener noreferrer">立即購票</a>
     </div>
   </div>
   <div class="hero__rays" aria-hidden="true"></div>
@@ -64,7 +67,7 @@
 
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
-  <div class="marquee__track">
+  <div class="marquee__track" id="marqueeTrack">
     <span>是與魔為伍，還是與神同行？</span><span class="dot">✦</span>
     <span>人類的存亡，繫於一念之間</span><span class="dot">✦</span>
     <span>屬於你我的神話，傳之恆久的詩篇</span><span class="dot">✦</span>
@@ -85,10 +88,12 @@
     </div>
     <div class="synopsis__text">
       <p class="kicker reveal">劇情簡介 ｜ SYNOPSIS</p>
-      <h2 class="section__title reveal">在宇宙成住壞滅的洪流中</h2>
-      <p class="reveal">慈悲的萬王之王為挽救眾生而下世傳法。然而以大紅龍為首的邪魔趁機作亂，魔亂人間。地球成為宇宙的焦點——是與魔為伍，還是與神同行？人類的存亡，繫於一念之間。</p>
-      <p class="reveal">《再次成為神》是「為你而來」三部曲的壓軸之作，以宏大奇幻與寫實交融的手法，穿越時空、縱橫古今，揭示生命的本源與意義，剖析世間亂象背後的因由，並展現生命所面臨的重大抉擇與出路。</p>
-      <p class="reveal accent">這不僅是一部電影，更是一場靈魂的覺醒之旅。觀影後，您將對當今世界的許多問題產生全新思考，對生命的意義有更深體悟。</p>
+      <h2 class="section__title reveal" id="synopsisTitle">在宇宙成住壞滅的洪流中</h2>
+      <div id="synopsisParas">
+        <p class="reveal">慈悲的萬王之王為挽救眾生而下世傳法。然而以大紅龍為首的邪魔趁機作亂，魔亂人間。地球成為宇宙的焦點——是與魔為伍，還是與神同行？人類的存亡，繫於一念之間。</p>
+        <p class="reveal">《再次成為神》是「為你而來」三部曲的壓軸之作，以宏大奇幻與寫實交融的手法，穿越時空、縱橫古今，揭示生命的本源與意義，剖析世間亂象背後的因由，並展現生命所面臨的重大抉擇與出路。</p>
+        <p class="reveal accent">這不僅是一部電影，更是一場靈魂的覺醒之旅。觀影後，您將對當今世界的許多問題產生全新思考，對生命的意義有更深體悟。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -122,7 +127,7 @@
 <section class="gallery section" id="gallery">
   <p class="kicker center reveal">劇照藝術 ｜ KEY ART</p>
   <h2 class="section__title center reveal">天國的畫卷</h2>
-  <div class="gallery__grid">
+  <div class="gallery__grid" id="galleryGrid">
     <figure class="gallery__item gallery__item--tall reveal" data-src="assets/img/poster-sage.jpg" data-cap="從始至終的守護，義無反顧的奔赴">
       <img src="assets/img/poster-sage.jpg" alt="長者與少女 仙鶴" loading="lazy" />
     </figure>
@@ -155,7 +160,7 @@
       您的瀏覽器不支援影片播放，請改用 Safari 或 Chrome 最新版。
     </video>
   </div>
-  <p class="trailer__note center reveal">※ 若影片無法播放，建議使用 Safari 或最新版 Chrome 瀏覽。</p>
+  <p class="trailer__note center reveal" id="trailerNote">※ 若影片無法播放，建議使用 Safari 或最新版 Chrome 瀏覽。</p>
 </section>
 
 <!-- DIRECTOR -->
@@ -163,12 +168,17 @@
   <div class="director__inner">
     <p class="kicker center reveal">導演的話 ｜ DIRECTOR'S NOTE</p>
     <blockquote class="director__quote reveal">
-      <span class="director__mark">「</span>
-      我們想從更宏大的視角來探究生命的來源和意義，解釋人間的一些亂象和它後面的原因，以及展示生命所面臨的選擇和出路。
-      <span class="director__mark director__mark--close">」</span>
+      <span class="director__mark">「</span><span id="directorQuote">我們想從更宏大的視角來探究生命的來源和意義，解釋人間的一些亂象和它後面的原因，以及展示生命所面臨的選擇和出路。</span><span class="director__mark director__mark--close">」</span>
     </blockquote>
-    <p class="director__name reveal">— 導演 <strong>嚴真</strong>　Kevin Yang</p>
+    <p class="director__name reveal">— 導演 <strong id="directorName">嚴真</strong>　<span id="directorNameEn">Kevin Yang</span></p>
   </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section" id="testimonialsSection" hidden>
+  <p class="kicker center reveal">觀眾心得 ｜ AUDIENCE VOICES</p>
+  <h2 class="section__title center reveal">觀影後的感動</h2>
+  <div class="testimonials__grid" id="testimonialGrid"></div>
 </section>
 
 <!-- SCREENING / CTA -->
@@ -176,16 +186,20 @@
   <div class="screening__bg" style="background-image:url('assets/img/poster-couple.jpg')"></div>
   <div class="screening__veil"></div>
   <div class="screening__inner reveal">
-    <p class="screening__soon">即將全台上映</p>
+    <p class="screening__soon" id="screeningSoon">即將全台上映</p>
     <h2 class="screening__title">再次成為神</h2>
     <p class="screening__en">ONCE WE WERE DIVINE</p>
-    <p class="screening__review">「年度最震撼電影！其視野和思路，定然帶給您一場醒腦奇觀！」<span>— 影評</span></p>
+    <p class="screening__review"><span id="screeningReview">「年度最震撼電影！其視野和思路，定然帶給您一場醒腦奇觀！」</span><span id="screeningReviewBy">— 影評</span></p>
     <div class="screening__meta">
-      <div><span>出品</span>加拿大新唐人</div>
-      <div><span>發行</span>雄獅影視文化有限公司</div>
-      <div><span>導演</span>嚴真 Kevin Yang</div>
+      <div><span>出品</span><em id="metaProducer">加拿大新唐人</em></div>
+      <div><span>發行</span><em id="metaDistributor">雄獅影視文化有限公司</em></div>
+      <div><span>導演</span><em id="metaDirector">嚴真 Kevin Yang</em></div>
     </div>
-    <a href="#trailer" class="btn btn--gold btn--lg">▶ 觀看預告片</a>
+    <div class="screening__list" id="screeningList" hidden></div>
+    <div class="screening__actions">
+      <a href="#trailer" class="btn btn--gold btn--lg">▶ 觀看預告片</a>
+      <a href="https://lion-movies.oen.tw/" class="btn btn--ticket btn--lg" target="_blank" rel="noopener noreferrer">立即購票</a>
+    </div>
   </div>
 </section>
 
@@ -207,6 +221,6 @@
   <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="下一張">›</button>
 </div>
 
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>
