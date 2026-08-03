@@ -1,0 +1,72 @@
+{
+  "copy": {
+    "heroTag": "「為你而來」三部曲 — 壓軸鉅獻",
+    "heroSub": "穿越時空、縱橫古今　一場靈魂的覺醒之旅",
+    "marquee": [
+      "是與魔為伍，還是與神同行？",
+      "人類的存亡，繫於一念之間",
+      "屬於你我的神話，傳之恆久的詩篇",
+      "從始至終的守護，義無反顧的奔赴"
+    ],
+    "synopsisTitle": "在宇宙成住壞滅的洪流中",
+    "synopsisParas": [
+      "慈悲的萬王之王為挽救眾生而下世傳法。然而以大紅龍為首的邪魔趁機作亂，魔亂人間。地球成為宇宙的焦點——是與魔為伍，還是與神同行？人類的存亡，繫於一念之間。",
+      "《再次成為神》是「為你而來」三部曲的壓軸之作，以宏大奇幻與寫實交融的手法，穿越時空、縱橫古今，揭示生命的本源與意義，剖析世間亂象背後的因由，並展現生命所面臨的重大抉擇與出路。",
+      "這不僅是一部電影，更是一場靈魂的覺醒之旅。觀影後，您將對當今世界的許多問題產生全新思考，對生命的意義有更深體悟。"
+    ],
+    "directorQuote": "我們想從更宏大的視角來探究生命的來源和意義，解釋人間的一些亂象和它後面的原因，以及展示生命所面臨的選擇和出路。",
+    "directorName": "嚴真",
+    "directorNameEn": "Kevin Yang",
+    "screeningSoon": "即將全台上映",
+    "screeningReview": "「年度最震撼電影！其視野和思路，定然帶給您一場醒腦奇觀！」",
+    "screeningReviewBy": "影評",
+    "metaProducer": "加拿大新唐人",
+    "metaDistributor": "雄獅影視文化有限公司",
+    "metaDirector": "嚴真 Kevin Yang",
+    "trailerNote": "※ 若影片無法播放，建議使用 Safari 或最新版 Chrome 瀏覽。"
+  },
+  "gallery": [
+    {
+      "src": "assets/img/poster-sage.jpg",
+      "alt": "長者與少女 仙鶴",
+      "cap": "從始至終的守護，義無反顧的奔赴",
+      "tall": true
+    },
+    {
+      "src": "assets/img/poster-empress.jpg",
+      "alt": "天女與今生",
+      "cap": "穿越慾望的誘惑，完成生命的涅槃",
+      "tall": false
+    },
+    {
+      "src": "assets/img/poster-couple.jpg",
+      "alt": "神尊與天女",
+      "cap": "天上人間，因緣再續",
+      "tall": false
+    },
+    {
+      "src": "assets/img/poster-violin.jpg",
+      "alt": "提琴少女 桃花",
+      "cap": "桃花深處，琴音入夢",
+      "tall": true
+    },
+    {
+      "src": "assets/img/poster-meditation-en.jpg",
+      "alt": "持蓮入定 英文版",
+      "cap": "屬於你我的神話，傳之恆久的詩篇",
+      "tall": false
+    },
+    {
+      "src": "assets/img/poster-sage-en.jpg",
+      "alt": "長者與少女 英文版",
+      "cap": "ONCE WE WERE DIVINE — Coming Soon",
+      "tall": false
+    }
+  ],
+  "trailer": {
+    "src": "assets/video/trailer-b.mov",
+    "poster": "assets/img/hero-wide.jpg"
+  },
+  "screenings": [],
+  "testimonials": []
+}
