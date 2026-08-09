@@ -68,5 +68,66 @@
     "poster": "assets/img/hero-wide.jpg"
   },
   "screenings": [],
-  "testimonials": []
+  "testimonials": [
+    {
+      "type": "drive",
+      "src": "1Y0XY-yhVTNbGTqccs113gT9fNwfVqC8u",
+      "title": "楊議員與莊市長候選人｜觀影心得",
+      "name": "觀眾心得分享"
+    },
+    {
+      "type": "drive",
+      "src": "15b8NTOpeD8O7ma_MQOh5CI6FXEkMkGzp",
+      "title": "新竹市原住民文化傳承協會理事長 趙若芸｜觀影心得",
+      "name": "觀眾心得分享"
+    },
+    {
+      "type": "drive",
+      "src": "14PcxAOW7Wm47aFwSNB-wOz4Q_jClbyiO",
+      "title": "觀眾心得分享 1",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1hIvlApk3lY41aKUxqnI0xrkbggntcl1-",
+      "title": "觀眾心得分享 2",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1rAFWdRhMYBrvgCs5zfyWfXphdjrWBEa8",
+      "title": "觀眾心得分享 3",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1cYaCxHYeQ3QO0JnoXI1s2-a-vpUmdoha",
+      "title": "觀眾心得分享 4",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1Dsz-4lUPLduS1nDeGVRfrBP8sjhwuODt",
+      "title": "觀眾心得分享 5",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1aAGOyNLYGIia87Ljx25hgkKBzOcIN8S_",
+      "title": "觀眾心得分享 6",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1jCtopxj9AytXAPoeokaZiGkZEF0AOxu8",
+      "title": "觀眾心得分享 7",
+      "name": "再次成為神"
+    },
+    {
+      "type": "drive",
+      "src": "1C1ikLQ2OTLcBC7jDjBEvHM8ieEP9D0jt",
+      "title": "觀眾心得分享 8",
+      "name": "再次成為神"
+    }
+  ]
 }
