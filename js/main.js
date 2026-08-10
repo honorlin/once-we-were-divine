@@ -286,11 +286,11 @@
             "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           );
         } else if (t.type === "drive") {
-          media = document.createElement("iframe");
-          media.src = drivePreviewUrl(t.src);
-          media.setAttribute("allowfullscreen", "");
-          media.setAttribute("loading", "lazy");
-          media.setAttribute("allow", "autoplay; fullscreen");
+          media = document.createElement("video");
+          media.controls = true;
+          media.preload = "metadata";
+          media.playsInline = true;
+          media.src = driveDownloadUrl(t.src);
         } else {
           media = document.createElement("video");
           media.src = t.src;
@@ -327,11 +327,14 @@
     return m ? m[1] : null;
   }
 
-  function drivePreviewUrl(src) {
+  function driveFileId(src) {
     var value = String(src || "");
     var m = value.match(/(?:\/file\/d\/|id=)([\w-]{10,})/) || value.match(/^([\w-]{10,})$/);
-    var id = m ? m[1] : value;
-    return "https://drive.google.com/file/d/" + id + "/preview";
+    return m ? m[1] : value;
+  }
+
+  function driveDownloadUrl(src) {
+    return "https://drive.google.com/uc?export=download&id=" + encodeURIComponent(driveFileId(src));
   }
 
   fetch("content.json?t=" + Date.now())
