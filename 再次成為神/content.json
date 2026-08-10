@@ -73,61 +73,71 @@
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-01.mp4",
       "title": "楊議員與莊市長候選人｜觀影心得",
-      "name": "觀眾心得分享"
+      "name": "觀眾心得分享",
+      "poster": "/assets/img/testimonials/testimonial-01.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-02.mp4",
       "title": "新竹市原住民文化傳承協會理事長 趙若芸｜觀影心得",
-      "name": "觀眾心得分享"
+      "name": "觀眾心得分享",
+      "poster": "/assets/img/testimonials/testimonial-02.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-03.mp4",
       "title": "觀眾心得分享 1",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-03.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-04.mp4",
       "title": "觀眾心得分享 2",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-04.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-05.mp4",
       "title": "觀眾心得分享 3",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-05.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-06.mp4",
       "title": "觀眾心得分享 4",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-06.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-07.mp4",
       "title": "觀眾心得分享 5",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-07.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-08.mp4",
       "title": "觀眾心得分享 6",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-08.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-09.mp4",
       "title": "觀眾心得分享 7",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-09.jpg"
     },
     {
       "type": "video",
       "src": "/assets/video/testimonials/testimonial-10.mp4",
       "title": "觀眾心得分享 8",
-      "name": "再次成為神"
+      "name": "再次成為神",
+      "poster": "/assets/img/testimonials/testimonial-10.jpg"
     }
   ]
 }

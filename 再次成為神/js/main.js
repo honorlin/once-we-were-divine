@@ -290,6 +290,7 @@
           media.controls = true;
           media.preload = "metadata";
           media.playsInline = true;
+          if (t.poster) media.poster = t.poster;
           media.src = driveDownloadUrl(t.src);
         } else {
           media = document.createElement("video");
@@ -297,6 +298,7 @@
           media.controls = true;
           media.preload = "metadata";
           media.playsInline = true;
+          if (t.poster) media.poster = t.poster;
         }
         var mediaWrap = document.createElement("div");
         mediaWrap.className = "testimonial__media";
