@@ -399,3 +399,289 @@ a.screening__row:hover{background:rgba(216,178,90,.08)}
   border-radius: 24px;
   background: #050505;
 }
+
+/* ===== State Organs documentary visual direction =====
+   Keep the landing-page structure, but move away from the warm mythic look.
+   Mood: investigative documentary / black-red-white / restrained urgency.
+*/
+:root{
+  --ivory:#e8e3da;
+  --ivory-2:#cfc8bd;
+  --paper:#151515;
+  --ink:#f2eee8;
+  --ink-soft:#c8c0b6;
+  --gold:#9e1b1f;
+  --gold-2:#c73535;
+  --gold-bright:#ef4444;
+  --bronze:#d8d0c4;
+  --jade:#7f1d1d;
+  --line:rgba(255,255,255,.13);
+  --shadow:0 28px 70px -34px rgba(0,0,0,.85);
+  --serif:"Noto Serif TC",serif;
+  --sans:"Noto Sans TC",sans-serif;
+  --eng:"Cinzel",serif;
+}
+
+body{
+  background:#090909;
+  color:var(--ink);
+}
+body::before{
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.78)),
+    radial-gradient(80% 60% at 20% 0%, rgba(158,27,31,.20), transparent 60%),
+    radial-gradient(90% 70% at 100% 20%, rgba(255,255,255,.055), transparent 58%),
+    #090909;
+}
+body::after{
+  opacity:.18;
+  mix-blend-mode:screen;
+}
+
+.petals,.embers,.hero__rays,.hero__glow,.hero__aura{display:none!important}
+
+.section{
+  position:relative;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.section::before{
+  content:"";
+  position:absolute;
+  left:28px;right:28px;top:0;height:1px;
+  background:linear-gradient(90deg, transparent, rgba(158,27,31,.72), transparent);
+  pointer-events:none;
+}
+.section__title{
+  font-family:var(--sans);
+  font-weight:800;
+  letter-spacing:.02em;
+  color:#fff;
+}
+.kicker{
+  font-family:var(--sans);
+  font-weight:700;
+  letter-spacing:.24em;
+  color:#ef4444;
+}
+.kicker::before{
+  content:"// ";
+  color:#ef4444;
+}
+
+.btn{
+  font-family:var(--sans);
+  font-weight:800;
+  letter-spacing:.08em;
+  border-radius:0;
+  text-transform:none;
+}
+.btn--gold,.btn--ticket{
+  background:#9e1b1f;
+  color:#fff;
+  border-color:#c73535;
+  box-shadow:0 18px 34px -20px rgba(239,68,68,.85);
+}
+.btn--gold:hover,.btn--ticket:hover{
+  background:#c73535;
+  color:#fff;
+}
+.btn--ghost{
+  background:rgba(255,255,255,.035);
+  border-color:rgba(255,255,255,.35);
+  color:#f2eee8;
+}
+.btn--ghost:hover{
+  background:#f2eee8;
+  color:#111;
+}
+
+.nav::before{
+  background:linear-gradient(180deg, rgba(5,5,5,.94), rgba(5,5,5,.55), transparent);
+}
+.nav.scrolled{
+  background:rgba(8,8,8,.88);
+  border-bottom:1px solid rgba(255,255,255,.12);
+  box-shadow:0 12px 34px -24px rgba(0,0,0,.95);
+}
+.nav__brand-cn,.nav.scrolled .nav__brand-cn{color:#fff}
+.nav__brand-en,.nav.scrolled .nav__brand-en{color:#ef4444}
+.nav__links a,.nav:not(.scrolled) .nav__links a{color:rgba(242,238,232,.82)}
+.nav__links a:hover{color:#fff}
+.nav__links a:not(.nav__cta)::after{background:#ef4444}
+.nav__cta{
+  color:#fff!important;
+  border-color:rgba(255,255,255,.32);
+}
+.nav__cta:hover{background:#fff;color:#111!important}
+.nav__ticket{background:#9e1b1f;color:#fff!important;border-color:#c73535}
+.nav__ticket:hover{background:#c73535;color:#fff!important}
+.nav__toggle span{background:#fff}
+
+.hero{
+  min-height:96vh;
+  padding-top:104px;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.10), #090909 92%),
+    radial-gradient(70% 50% at 50% 18%, rgba(158,27,31,.24), transparent 62%),
+    #050505;
+}
+.hero::before{
+  content:"DOCUMENTARY / HUMAN RIGHTS / TRUE STORY";
+  position:absolute;
+  top:112px;left:32px;z-index:1;
+  font-family:var(--sans);
+  font-size:.72rem;
+  letter-spacing:.28em;
+  color:rgba(255,255,255,.42);
+  writing-mode:vertical-rl;
+}
+.hero__banner{
+  width:min(1120px,92vw);
+  margin:0 auto;
+  padding:18px;
+  background:#101010;
+  border:1px solid rgba(255,255,255,.16);
+  box-shadow:0 46px 90px -48px rgba(0,0,0,1);
+}
+.hero__banner img{
+  width:100%;
+  border:1px solid rgba(255,255,255,.08);
+  filter:contrast(1.07) saturate(.86);
+}
+.hero__tag{
+  font-family:var(--sans);
+  font-weight:800;
+  color:#fff;
+  letter-spacing:.08em;
+}
+.hero__tag::before,.hero__tag::after{content:"";margin:0}
+.hero__sub{color:rgba(242,238,232,.76);font-family:var(--sans)}
+.hero__scroll-line{background:linear-gradient(#ef4444, transparent)}
+.hero__scroll-line::after{background:#fff}
+.hero__scroll-text{color:rgba(242,238,232,.6);font-family:var(--sans)}
+
+.marquee{
+  background:#111;
+  border-color:rgba(239,68,68,.55);
+  color:#f2eee8;
+}
+.marquee__track span{
+  font-family:var(--sans);
+  font-weight:700;
+  letter-spacing:.12em;
+}
+.marquee__track .dot{color:#ef4444}
+
+.synopsis__grid{align-items:stretch}
+.synopsis__poster img{
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(.28) contrast(1.08);
+  border-radius:0;
+}
+.synopsis__poster-glow{
+  border-color:rgba(239,68,68,.72);
+  border-radius:0;
+}
+.synopsis__poster::after{background:radial-gradient(circle, rgba(158,27,31,.24), transparent 68%)}
+.synopsis__text p{
+  color:rgba(242,238,232,.78);
+  font-family:var(--sans);
+  font-weight:400;
+}
+.synopsis__text p.accent{
+  color:#fff;
+  border-left:4px solid #ef4444;
+  background:rgba(255,255,255,.04);
+  padding:16px 20px;
+}
+
+.trilogy__lead{color:rgba(242,238,232,.72);font-family:var(--sans)}
+.trilogy__card{
+  background:#121212;
+  border-color:rgba(255,255,255,.12);
+  border-radius:0;
+}
+.trilogy__card:hover{box-shadow:0 30px 70px -40px rgba(239,68,68,.55)}
+.trilogy__num{color:#ef4444;font-family:var(--sans);font-weight:900}
+.trilogy__card h3{font-family:var(--sans);color:#fff}
+.trilogy__card p{font-family:var(--sans);color:rgba(242,238,232,.68)}
+.trilogy__card--active{
+  background:linear-gradient(180deg,#2a090a,#111);
+  border-color:rgba(239,68,68,.7);
+}
+.trilogy__badge{background:#ef4444;color:#fff;border-radius:0;font-family:var(--sans)}
+
+.gallery__item{
+  border-radius:0;
+  border-color:rgba(255,255,255,.13);
+  box-shadow:0 22px 48px -34px rgba(0,0,0,.95);
+  background:#111;
+}
+.gallery__item img{filter:grayscale(.18) contrast(1.05) saturate(.82)}
+.gallery__item::after{
+  font-family:var(--sans);
+  background:linear-gradient(transparent,rgba(0,0,0,.9));
+  border-top:2px solid rgba(239,68,68,.72);
+}
+
+.trailer__frame{
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:0;
+  padding:10px;
+  background:#101010;
+  box-shadow:0 34px 80px -44px rgba(0,0,0,1);
+}
+.trailer__frame video,.trailer__frame iframe{border-radius:0}
+.trailer__note{color:rgba(242,238,232,.58)}
+
+.director__inner{
+  background:#111;
+  border:1px solid rgba(255,255,255,.12);
+  border-left:6px solid #9e1b1f;
+  box-shadow:var(--shadow);
+}
+.director__quote{font-family:var(--sans);color:#fff}
+.director__mark{color:#ef4444}
+.director__name{color:rgba(242,238,232,.68);font-family:var(--sans)}
+
+.screening{
+  max-width:none;
+  padding-left:28px;
+  padding-right:28px;
+  background:#050505;
+}
+.screening__veil{
+  background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.72),rgba(158,27,31,.28));
+}
+.screening__soon{color:#ef4444;font-family:var(--sans);font-weight:800}
+.screening__title{font-family:var(--sans);font-weight:900;color:#fff}
+.screening__en{color:rgba(255,255,255,.62)}
+.screening__review{font-family:var(--sans);color:#fff;border-left:4px solid #ef4444;padding-left:18px}
+.screening__meta{
+  border-color:rgba(255,255,255,.14);
+  background:rgba(0,0,0,.22);
+}
+.screening__meta span{color:#ef4444}
+.screening__meta em{color:#fff}
+.screening__item{
+  background:rgba(255,255,255,.045);
+  border-color:rgba(255,255,255,.13);
+  border-radius:0;
+}
+
+.footer{
+  background:#050505;
+  color:rgba(242,238,232,.7);
+  border-top:1px solid rgba(239,68,68,.45);
+}
+.footer__title{color:#fff;font-family:var(--sans);font-weight:900}
+.footer a{color:#ef4444}
+.lightbox{background:rgba(0,0,0,.94)}
+.lightbox__figure img{border-radius:0;border:1px solid rgba(255,255,255,.14)}
+
+@media (max-width:900px){
+  .nav__links{background:rgba(8,8,8,.96);border-color:rgba(255,255,255,.12)}
+  .hero::before{display:none}
+  .hero__banner{width:94vw;padding:10px}
+}
