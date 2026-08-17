@@ -1,0 +1,71 @@
+{
+  "copy": {
+    "heroTag": "震撼紀錄片｜STATE ORGANS",
+    "heroSub": "揭露中共高官延壽內幕　一段追尋真相與良知的旅程",
+    "marquee": [
+      "真相就是力量",
+      "第一手證詞，揭開不為人知的黑幕",
+      "每一個生命，都不該被國家機器奪走",
+      "看見真相，才有改變的開始"
+    ],
+    "synopsisTitle": "揭露強制摘取器官的黑暗真相",
+    "synopsisParas": [
+      "《國有器官》是一部加拿大紀錄片，聚焦中國器官移植制度背後長期被掩蓋的真相，透過倖存者、家屬、醫界人士與調查者的第一手證詞，呈現一場跨越多年、追尋失蹤親人與揭露迫害的艱難歷程。",
+      "二十多年前，兩位年輕人在中共迫害法輪功的政策下神秘失蹤。他們的家人從尋人開始，一步步走入龐大而沉重的國家機器陰影，揭開強制摘取器官與良心犯遭迫害的驚人內幕。",
+      "這不只是一部紀錄片，更是一封寫給世界的警訊：當醫療被權力操控，當生命被視為資源，人們更需要勇氣看見真相，守住良知與尊嚴。"
+    ],
+    "directorQuote": "我們希望透過真實證詞與嚴謹調查，讓觀眾看見被掩蓋的生命故事，也讓世界理解：沉默本身，可能讓迫害繼續發生。",
+    "directorName": "章勇進",
+    "directorNameEn": "Raymond Zhang",
+    "screeningSoon": "全台放映中",
+    "screeningReview": "「一部觸動人心的紀錄片，每個環節都在回答我們對國有器官的疑惑。」",
+    "screeningReviewBy": "觀眾回響",
+    "metaProducer": "RooYee Films Production Inc.",
+    "metaDistributor": "雄獅影視文化有限公司",
+    "metaDirector": "章勇進 Raymond Zhang",
+    "trailerNote": "※ 預告片取自官方公開影片；若無法播放，可點擊前往 YouTube 觀看。"
+  },
+  "gallery": [
+    {
+      "src": "assets/img/state-organs/titlebanner.png",
+      "alt": "國有器官 主視覺",
+      "cap": "揭露中共高官延壽內幕",
+      "tall": false
+    },
+    {
+      "src": "assets/img/state-organs/screening-puli.webp",
+      "alt": "埔里山明戲院放映會",
+      "cap": "全台放映場次陸續更新",
+      "tall": true
+    },
+    {
+      "src": "assets/img/state-organs/audience-01.webp",
+      "alt": "觀眾心得照片",
+      "cap": "觀眾表示影片內容令人震撼，真相值得被更多人看見。",
+      "tall": false
+    },
+    {
+      "src": "assets/img/state-organs/audience-02.webp",
+      "alt": "觀眾心得照片",
+      "cap": "醫界與教育界觀眾呼籲更多醫療人員關注此議題。",
+      "tall": false
+    },
+    {
+      "src": "assets/img/state-organs/audience-03.webp",
+      "alt": "觀眾心得照片",
+      "cap": "面對邪惡強權，真相就是力量。",
+      "tall": false
+    }
+  ],
+  "screenings": [
+    {
+      "date": "2026-09-12",
+      "time": "13:30-16:00",
+      "city": "埔里",
+      "venue": "山明戲院",
+      "note": "放映會｜點選購票查看詳細資訊",
+      "ticketUrl": "https://reurl.cc/zDOLr7"
+    }
+  ],
+  "testimonials": []
+}
