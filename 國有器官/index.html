@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/style.css?v=8" />
+<link rel="stylesheet" href="css/style.css?v=9" />
 </head>
 <body>
 
@@ -62,7 +62,10 @@
     <p class="hero__featured-kicker">FEATURED VIDEO</p>
     <h2>國有器官觀眾見面會</h2>
     <div class="hero__featured-frame">
-      <iframe src="https://www.ganjingworld.com/video/1icdr69ri8i59VOoGjBQZjeIV1sa1c" title="國有器官觀眾見面會" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      <video id="featuredGjwVideo" controls playsinline preload="metadata" poster="https://image1-ap-japan.cloudokyo.cloud/image/v14/ef/56/4e/ef564e43-e2ed-47e7-9cc1-217ac5e0c0d4/origin.jpg">
+        <source src="https://media1-ap-japan.cloudokyo.cloud/video/v13/40/44/e2/4044e2fc-c9a2-4f67-b8a5-2bb2bb1bafa7/master.m3u8" type="application/x-mpegURL" />
+        您的瀏覽器不支援影片播放，請點下方連結前往乾淨世界觀看。
+      </video>
     </div>
     <p class="hero__featured-note"><a href="https://www.ganjingworld.com/s/OmkyjQo6Ok" target="_blank" rel="noopener noreferrer">若影片無法播放，點此在乾淨世界觀看</a></p>
   </div>
@@ -227,6 +230,7 @@
   <button class="lightbox__nav lightbox__next" id="lbNext" aria-label="下一張">›</button>
 </div>
 
-<script src="js/main.js?v=6"></script>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="js/main.js?v=7"></script>
 </body>
 </html>

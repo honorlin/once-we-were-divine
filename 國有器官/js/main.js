@@ -346,4 +346,19 @@
       /* 讀不到 content.json 時保留 HTML 內建內容 */
       bindGalleryItems();
     });
+
+  /* ---- Featured Gan Jing World HLS video ---- */
+  (function () {
+    var video = document.getElementById("featuredGjwVideo");
+    var src = "https://media1-ap-japan.cloudokyo.cloud/video/v13/40/44/e2/4044e2fc-c9a2-4f67-b8a5-2bb2bb1bafa7/master.m3u8";
+    if (!video) return;
+    if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = src;
+    } else if (window.Hls && window.Hls.isSupported()) {
+      var hls = new window.Hls({ enableWorker: true });
+      hls.loadSource(src);
+      hls.attachMedia(video);
+    }
+  })();
+
 })();
