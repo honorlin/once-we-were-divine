@@ -899,3 +899,30 @@ body::after{
   .voice-card__topline{align-items:flex-start;flex-direction:column}
 }
 @media (max-width:560px){.voices-stats{grid-template-columns:1fr}}
+
+/* Official Taiwan site badges */
+.hero__official{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:28px auto -8px;
+  padding:7px 14px;
+  color:#fff;
+  background:rgba(158,27,31,.92);
+  border:1px solid rgba(239,68,68,.85);
+  font-family:var(--sans);
+  font-size:.86rem;
+  font-weight:900;
+  letter-spacing:.18em;
+  box-shadow:0 16px 34px -24px rgba(239,68,68,.95);
+  opacity:0;
+  animation:fadeUp 1.1s .65s forwards;
+}
+.footer__official{
+  margin:4px 0 10px;
+  color:#ef4444;
+  font-family:var(--sans);
+  font-size:.9rem;
+  font-weight:900;
+  letter-spacing:.16em;
+}
