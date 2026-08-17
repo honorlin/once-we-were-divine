@@ -803,3 +803,99 @@ body::after{
 }
 .voice-card__meta a{color:#ef4444;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 @media (max-width:900px){.voice-grid{grid-template-columns:1fr}.voice-card__meta{align-items:flex-start;flex-direction:column}}
+
+/* Million Voices upgrade */
+.voices-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;
+  margin:38px auto 22px;
+}
+.voices-stats div{
+  padding:22px 18px;
+  background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.025));
+  border:1px solid rgba(255,255,255,.12);
+  border-top:3px solid #9e1b1f;
+  text-align:center;
+}
+.voices-stats strong{
+  display:block;
+  color:#fff;
+  font-family:var(--sans);
+  font-size:clamp(1.8rem,4vw,3.1rem);
+  line-height:1;
+  letter-spacing:.02em;
+}
+.voices-stats span{
+  display:block;
+  margin-top:10px;
+  color:rgba(242,238,232,.62);
+  font-size:.9rem;
+  letter-spacing:.08em;
+}
+.voices-categories{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:0 auto 22px;
+}
+.voices-categories span{
+  padding:7px 13px;
+  color:#f2eee8;
+  border:1px solid rgba(239,68,68,.42);
+  background:rgba(158,27,31,.16);
+  font-size:.86rem;
+  letter-spacing:.06em;
+}
+.voices-manifesto{
+  max-width:820px;
+  margin:0 auto 44px;
+  padding:20px 24px;
+  border-left:5px solid #ef4444;
+  background:rgba(255,255,255,.045);
+}
+.voices-manifesto p{
+  margin:0;
+  color:rgba(242,238,232,.82);
+  font-family:var(--sans);
+  line-height:1.9;
+}
+.voice-card__topline{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+.voice-card__rank{margin-bottom:0!important}
+.voice-card__tag{
+  color:#fff;
+  background:#9e1b1f;
+  padding:4px 9px;
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  white-space:nowrap;
+}
+.voice-card blockquote{
+  margin:0 0 12px;
+  padding:12px 14px;
+  color:#fff;
+  background:rgba(239,68,68,.09);
+  border-left:3px solid #ef4444;
+  font-family:var(--serif);
+  line-height:1.75;
+}
+.voices-cta{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:16px;
+  margin-top:42px;
+}
+@media (max-width:900px){
+  .voices-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .voice-card__topline{align-items:flex-start;flex-direction:column}
+}
+@media (max-width:560px){.voices-stats{grid-template-columns:1fr}}
