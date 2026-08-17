@@ -347,18 +347,29 @@
       bindGalleryItems();
     });
 
-  /* ---- Featured Gan Jing World HLS video ---- */
+  /* ---- Gan Jing World HLS videos ---- */
   (function () {
-    var video = document.getElementById("featuredGjwVideo");
-    var src = video.getAttribute("data-hls-src") || "https://media1-ap-japan.cloudokyo.cloud/video/v13/40/44/e2/4044e2fc-c9a2-4f67-b8a5-2bb2bb1bafa7/playlist_720p.m3u8";
-    if (!video) return;
-    if (window.Hls && window.Hls.isSupported()) {
-      var hls = new window.Hls({ enableWorker: true });
-      hls.loadSource(src);
-      hls.attachMedia(video);
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = src;
+    function attachHls(video) {
+      if (!video || video.dataset.hlsAttached === "1") return;
+      var src = video.getAttribute("data-hls-src") || "https://media1-ap-japan.cloudokyo.cloud/video/v13/40/44/e2/4044e2fc-c9a2-4f67-b8a5-2bb2bb1bafa7/playlist_720p.m3u8";
+      video.dataset.hlsAttached = "1";
+      if (window.Hls && window.Hls.isSupported()) {
+        var hls = new window.Hls({ enableWorker: true });
+        hls.loadSource(src);
+        hls.attachMedia(video);
+      } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+        video.src = src;
+      }
     }
+    document.querySelectorAll("#featuredGjwVideo, .gjw-hls-video").forEach(function (video) {
+      if (video.id === "featuredGjwVideo") attachHls(video);
+      else {
+        video.addEventListener("mouseenter", function () { attachHls(video); }, { once: true });
+        video.addEventListener("click", function () { attachHls(video); }, { once: true });
+        video.addEventListener("touchstart", function () { attachHls(video); }, { once: true, passive: true });
+        video.addEventListener("play", function () { attachHls(video); }, { once: true });
+      }
+    });
   })();
 
 })();
